@@ -10,7 +10,7 @@ docker pull rvannauker/phpcpd
 ```
 2. Run phpcpd through the phpcpd container:
 ```bash
-sudo docker run --rm --volume $(pwd):/workspace --name="phpcpd" "rvannauker/phpcpd" {destination}
+docker run --rm --volume $(pwd):/workspace --name="phpcpd" "rvannauker/phpcpd" {destination}
 ```
 
 ### Download the source:
@@ -21,7 +21,7 @@ git clone https://github.com/RichVRed/docker-phpcpd.git
 ```
 2. Build the container:
 ```bash
-sudo docker build --force-rm --tag "rvannauker/phpcpd" --file phpcpd.dockerfile .
+docker build --force-rm --tag "rvannauker/phpcpd" --file phpcpd.dockerfile .
 ```
 3. Test running the container:
 ```bash
